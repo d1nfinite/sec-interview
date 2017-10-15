@@ -41,6 +41,7 @@
 >4.使用screen命令 建立断开模式的会话（原理和setid一样，只不过直接构造了一个环境）
 >	
 >e.g. screen -dmS mywindow
+>
 >e.g. screen -r mywindow
 
 - redis未授权访问
@@ -59,7 +60,17 @@
 
 - Linux 服务器的安全运维操作有哪些？如何保护 SSH？
 
-- 入侵 Linux 服务器后需要清除哪些日志？
+- **入侵 Linux 服务器后需要清除哪些日志？**
+>web日志，如apache的access.log,error.log。
+直接将日志清除过于明显,一般使用sed进行定向清除
+>
+>e.g.  sed -i -e '/192\.169\.1\.1/d'
+>
+>history命令的清除，也是对`~/.bash_history`进行定向清除
+>
+>wtmp日志的清除，`/var/log/wtmp`
+>
+>登录日志清除 `/var/log/secure`
 
 - 反弹 shell 的常用命令？一般常反弹哪一种 shell？为什么？
 
