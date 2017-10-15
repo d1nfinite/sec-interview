@@ -41,7 +41,6 @@
 >4.使用screen命令 建立断开模式的会话（原理和setid一样，只不过直接构造了一个环境）
 >	
 >e.g. screen -dmS mywindow
->	
 >e.g. screen -r mywindow
 
 - redis未授权访问
