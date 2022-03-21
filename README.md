@@ -64,6 +64,7 @@
 - 单向代码执行链如何实现执行多条语句，如`CommonCollections1` (★)
 - 请简单讲述一下Shiro反序列化漏洞的原理，无法使用ysoerial中common-collections利用链的原因是什么? (★)
 - 冰蝎当中通过Java联动`Cobalt Strike`上线的原理是什么? (★)
+- `serialVersionUID` 在反序列化中的作用是什么? (★)
 
 ## 安全研发相关
 
@@ -92,6 +93,10 @@
 - 假设某Linux机器存在命令审计(方法未知)，有哪些可能的绕过方法? (★★)
 - Linux常见的提权方法有哪些?(★★)
 - 僵尸进程和孤儿进程的区别是什么? (★)
+
+## Windows相关
+
+- UAC是如何进行鉴权校验的? BypassUAC的常见方法有哪些?
 
 ## 内网渗透
 
